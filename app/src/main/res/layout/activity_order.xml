@@ -62,11 +62,6 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/address_label"
         app:layout_constraintStart_toEndOf="@+id/address_label" />
 
-    <Spinner
-        android:id="@+id/mySpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <TextView
         android:id="@+id/phone_label"
         android:layout_width="wrap_content"
@@ -75,7 +70,6 @@
         android:text="@string/phone_label_string"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
-
 
     <EditText
         android:id="@+id/phone_text"
@@ -86,6 +80,39 @@
         android:inputType="phone"
         app:layout_constraintBaseline_toBaselineOf="@+id/phone_label"
         app:layout_constraintStart_toEndOf="@+id/phone_label" />
+
+    <EditText
+        android:id="@+id/city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/select_city"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/city_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/notes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/notes_label_text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/notes_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_notes_hint"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:id="@+id/delivery_label"
